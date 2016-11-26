@@ -10,5 +10,4 @@ make flashcards.pdf
 System Requirements
  - LaTeX
  - LaTeX package 'skak'
- - make
-
+ - GNU Make
