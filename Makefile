@@ -1,6 +1,5 @@
-flashcards: flashcards/flashcards.tex
-	cd flashcards;
-	cd flashcards; pdflatex flashcards.tex; pdflatex flashcards.tex; pdflatex flashcards.tex
+flashcards.pdf:
+	cd flashcards; make flashcards.pdf
 
 clean:
 	rm -rf flashcards/*.aux flashcards/*.dvi flashcards/*.log flashcards/*.ps flashcards/*.pdf
