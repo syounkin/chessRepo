@@ -1,10 +1,8 @@
-flashcards:
-	pdflatex flashcards.tex
-	bibtex flashcards.aux
-	pdflatex flashcards.tex
-	pdflatex flashcards.tex
+flashcards: flashcards/flashcards.tex
+	cd flashcards;
+	cd flashcards; pdflatex flashcards.tex; pdflatex flashcards.tex; pdflatex flashcards.tex
 
 clean:
-	rm -rf *.aux *.dvi *.log *.ps *.pdf
+	rm -rf flashcards/*.aux flashcards/*.dvi flashcards/*.log flashcards/*.ps flashcards/*.pdf
 
 .PHONY: clean
